@@ -80,48 +80,94 @@
     height: 590px;
     border-radius: 20px;
     margin-top: 30px;
-    position: absolute;
-    @media only screen and (min-width:0px) and (max-width:1200px) {
+    @media only screen and (min-width:576px) and (max-width:1200px) {
        height: auto;
-       position: absolute;
+}
+
+@media only screen and (min-width:576px) and (max-width:770px) {
+    position: absolute;
+    height: 800px;
+}
+
+@media only screen and (min-width:450px) and (max-width:575px) {
+    position: absolute;
+    height: auto;
+}
+
+@media only screen and (min-width:350px) and (max-width:450px) {
+    position: absolute;
+    height: auto;
+}
+
+@media only screen and (min-width:0px) and (max-width:1400px) {
+    position: relative;
 }
 
 
 }
 
 .pic>img{
-    position: relative;
     margin-right: -12px;
     display: flex;
     flex-wrap: nowrap;
     height: auto;
     width: auto;
+
+        @media only screen and (min-width:1200px) and (max-width:1400px) {
+        position: relative;
+        width: 660px;
+ }
+
     @media only screen and (min-width:1000px) and (max-width:1200px) {
         position: relative;
         margin-top: 60px;
-        margin-left: 162px;
+        margin-left: auto;
+        width: 784px;
  }
 
  @media only screen and (min-width:800px) and (max-width:1000px) {
     position: relative;
     margin-top: 60px;
-    margin-left: ;
-    width: 708px;
+    margin-left:auto;
+    width: 608px;
 }
 
-@media only screen and (min-width:600px) and (max-width:800px) {
+@media only screen and (min-width:770px) and (max-width:800px) {
     position: relative;
     margin-top: 60px;
-    margin-left: ;
-    width: 528px;
+    width: 610px;
+    margin-left: auto;
 }
 
-@media only screen and (min-width:400px) and (max-width:600px) {
+@media only screen and (min-width:576px) and (max-width:770px) {
     position: relative;
-    margin-top: 60px;
-    margin-left: ;
-    width: 528px;
+    width: 428px;
+    margin-top: 50px;
+    margin-left: auto;
 }
+
+@media only screen and (min-width:550px) and (max-width:575px) {
+    width: 440px;
+    margin-top: 50px;
+    position: relative;
+    margin-left: auto;
+}
+
+@media only screen and (min-width:450px) and (max-width:550px) {
+    width: 438px;
+    margin-top: 50px;
+    position: relative;
+    margin-left: auto;
+}
+
+@media only screen and (min-width:350px) and (max-width:550px) {
+    width: 300px;
+    margin-top: 50px;
+    position: relative;
+    margin-left: auto;
+}
+
+
 }
 
 .my-text {
@@ -140,8 +186,8 @@
 }
 
 .my-text-one>p{
-    font-family: Poppins;
-    font-size: 17px;
+    font-family: Poppins-one;
+    font-size: 15px;
 }
 
 .my-text-two{
@@ -152,6 +198,11 @@
     height: 40px;
     width: 299px;
     position: absolute;
+
+    @media only screen and (min-width:350px) and (max-width:450px) {
+        position: absolute;
+        width: auto;
+    }
 }
 
 .button{
@@ -163,4 +214,192 @@
     margin-left: 230px;
     position: absolute;
     font-weight: 600;
+
+    @media only screen and (min-width:350px) and (max-width:450px) {
+        position: absolute;
+        margin-left:150px;
+
+    }
 }
+
+
+/* <!-- PORTION THREE (WRITTEN-CONTENT-ONE) _________________________________________________ --> */
+
+
+
+.written-content>p{
+    font-family:poppins-one;
+    text-align: center;
+    margin-top: 120px;
+    font-size: 17px;
+    font-weight: 550;
+    line-height:19.2px;
+}
+
+.written-content>h1{
+    text-align: center;
+    font-weight: 660;
+    font-size: 50px;
+}
+
+.written-content-one {
+    margin-top: 70px;
+}
+
+.headings>h2{
+    font-size: 25px;
+    line-height: 33.6px;
+    margin-top: 14px;
+    font-family:poppins; 
+}
+
+.headings>p{
+font-size: 16px;
+
+line-height: 24px;
+font-weight: 600;
+font-family:poppins-one;
+margin-top: 20px;
+
+@media only screen and (min-width:0px) and (max-width:1400px) {
+    text-align: center;
+}
+}
+
+@font-face {
+    font-family:poppins;
+    src: url(fonts/Poppins-Bold.ttf);
+}
+
+@font-face {
+    font-family:poppins-one;
+    src: url(fonts/Poppins-Light.ttf);
+}
+
+
+
+.assign>p{
+    font-family:poppins-one;
+    margin-top: 80px;
+    font-size: 17px;
+    font-weight: 550;
+    line-height:19.2px;
+    font-weight: 600;
+
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+        text-align: center;
+    }
+}
+
+.assign>h1{
+    font-weight: 660;
+    font-size: 50px;
+    margin-left: -4px;
+
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+        text-align: center;
+    }
+}
+
+.assign>h1>img{
+    margin-left:734.97px;
+    object-fit: cover;
+
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+        display: none;
+    }
+}
+
+.assig,.assig-two,.assig-three,.headings{
+    text-align: start;
+    
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+    text-align: center;
+    }
+}
+
+/* <!-- PORTION FOUR (CARDS-CONTENT) _________________________________________________ --> */
+
+
+.cards-content{
+    background: linear-gradient( 115.89deg, rgba(193, 222, 232, 0.7) 9.86%, rgba(255, 255, 255, 0) 52.13%, rgba(251, 217, 185, 0.7) 97.99% );
+    border-radius: 14px;
+    margin-top: 40px;
+    width: 420px;
+
+    @media only screen and (min-width:350px) and (max-width:475px) {
+        width: 250px;
+}
+}
+
+.cards-content>img{
+    object-fit: cover;
+    mix-blend-mode: multiply;
+    border-radius: 14px;
+    width: 420px;
+
+    @media only screen and (min-width:350px) and (max-width:475px) {
+        justify-content: center;
+        width: 250px;
+        height: 160px;
+}
+}
+
+.cards-content-heading>p{
+    margin-top: 20px;
+    font-family:poppins-one;
+    font-weight: 600;
+}
+
+.cards-content-heading>h4{
+    margin-top:20px;
+    font-family: poppins;
+}
+
+.cards-content-heading>span{
+    margin-left:  20px;
+}
+
+.cards-content-heading{
+    background-color: white;
+    border-radius: 0px 10x 14px 0px;
+    border: 1px solid rgb(229, 226, 226);
+    padding-left: 20px;
+}
+
+.cards-content-orignal{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+        justify-content: center;
+    }
+
+    @media only screen and (min-width:350px) and (max-width:475px) {
+        justify-content: center;
+        font-size: 10px;
+}
+}
+
+
+.after-that>h1 {
+    margin-top: 110px;
+    font-family: poppins;
+    text-align: center;
+    font-weight: 660;
+    font-size: 50px;
+
+    @media only screen and (min-width:0px) and (max-width:1400px) {
+        text-align: center;
+}
+}
+
+.after-that {
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+/* <!-- PORTION FIVE (AFTER CARD-CONTENT) _________________________________________________ --> */
